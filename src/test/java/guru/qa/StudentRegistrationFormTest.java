@@ -37,8 +37,8 @@ public class StudentRegistrationFormTest extends TestBase {
     @Severity(SeverityLevel.NORMAL)
     @Feature("Student registration form")
     @Story("Filling the Student registration form")
-    @DisplayName("Successful filling of the Student registration form")
     @Link(value = "Demoqa", url = "https://demoqa.com")
+    @DisplayName("Successful filling of the Student registration form")
 
     void fillFormTest() {
         step("Open registration form", () -> {
