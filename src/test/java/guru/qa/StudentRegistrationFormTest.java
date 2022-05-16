@@ -16,7 +16,7 @@ import static com.codeborne.selenide.Selenide.*;
 import static io.qameta.allure.Allure.step;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class StudentRegistrationFormTest {
+public class StudentRegistrationFormTest extends TestBase {
 
     String firstName = "Alisa";
     String lastName = "Berg";
@@ -31,11 +31,6 @@ public class StudentRegistrationFormTest {
     String currentAddress = "Operngasse 15, 7";
     String state = "Haryana";
     String city = "Karnal";
-
-    @BeforeAll
-    static void setUp() {
-        Configuration.baseUrl = "https://demoqa.com";
-    }
 
     @Test
     @Owner("AlinaNefedowa")
